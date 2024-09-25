@@ -16,6 +16,8 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+  padding: 8px;
+  /* margin-top: 16px; */
 }
 
 input {
@@ -23,4 +25,44 @@ input {
   border-radius: 16px;
   padding: 8px 24px;
   width: 400px;
+  /* margin-top: 16px; */
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+ul.left-links, ul.right-links {
+  list-style-type: none;
+  display: flex;
+  gap: 16px;
+  margin: 8px;
+  padding: 8px;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(105, 105, 105);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px; 
+/* gap here is easier than individual margins */
+}
+
+.footer {
+  background-color: #eeeeee;
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-wrapper {
+  display: flex;
+  justify-content: space-between;
+  min-height: 100vh;
+  flex-direction: column;
 }
